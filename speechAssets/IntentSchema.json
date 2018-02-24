@@ -1,0 +1,122 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "objectType",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "bottle",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "phone",
+              "synonyms": [
+                "mobile",
+                "mobile phone",
+                "cellphone",
+                "iphone"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "key",
+              "synonyms": [
+                "keys"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "wallet",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "specs",
+              "synonyms": [
+                "goggles",
+                "spectacles",
+                "glasses"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "socks",
+              "synonyms": [
+                "sock"
+              ]
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "pen",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "pillow",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NoIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.YesIntent",
+        "samples": []
+      },
+      {
+        "name": "findMyObjectIntent",
+        "samples": [
+          "where is my {object}",
+          "where did i keep my {object}",
+          "find my {object}",
+          "alexa did you see my {object}",
+          "find my {object} alexa",
+          "where did i put my {object}",
+          "who hid my {object}",
+          "{object}"
+        ],
+        "slots": [
+          {
+            "name": "object",
+            "type": "objectType"
+          }
+        ]
+      }
+    ],
+    "invocationName": "object finder"
+  }
+}
