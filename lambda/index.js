@@ -7,7 +7,7 @@ var i =0;
 
 var handlers = {
    "LaunchRequest": function () {
-        this.response.speak("Welcome to Object Finder. Now you don't have to worry about where you put that bottle, keys or mobile phone. Keep track of your things using Alexa. So what do you wanna find this time?").listen("For example you can ask where is my wallet?"); 
+        this.response.speak("Welcome to Where's my stuff? Now you don't have to worry about where you put that bottle, keys or mobile phone anymore. Keep track of your things using Alexa. So what do you wanna find this time?").listen("For example you can ask where is my wallet?"); 
         this.emit(":responseReady");       
    },
    "findMyObjectIntent": function () {
@@ -25,7 +25,7 @@ var handlers = {
         this.emit(":responseReady");
     },
     'AMAZON.NoIntent': function () {
-        this.response.speak('Thanks for using object finder!')
+        this.response.speak('Thanks for using Where\'s my stuff!')
         this.emit(':responseReady');
     },
    'SessionEndedRequest': function () {
@@ -34,15 +34,15 @@ var handlers = {
 
    },
     'AMAZON.HelpIntent': function () {
-        this.response.speak('Welcome to Object Finder. Now you don\'t have to worry about where you put that bottle, keys or mobile phone. Keep track of your objects using Alexa. For example you can ask where is my wallet?').listen('You can ask where is my wallet?');
+        this.response.speak('Welcome to Where\'s my stuff? Now you don\'t have to worry about where you put that bottle, keys or mobile phone. Keep track of your objects using Alexa. For example you can ask where is my wallet?').listen('You can ask where is my wallet?');
         this.emit(':responseReady');
     },
     'AMAZON.CancelIntent': function () {
-        this.response.speak('Thanks for using object finder!');
+        this.response.speak('Thanks for using Where\'s my stuff!');
         this.emit(':responseReady');
     },
     'AMAZON.StopIntent': function () {
-        this.response.speak('Thanks for using object finder!');
+        this.response.speak('Thanks for using Where\'s my stuff!');
         this.emit(':responseReady');
     },
 
